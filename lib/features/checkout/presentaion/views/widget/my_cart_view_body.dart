@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:payment_app/core/utils/app_router.dart';
+import 'package:payment_app/features/checkout/presentaion/views/payment_detailes_view.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/custom_button.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/my_cart_total_price_widget.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/order_info_item_widget.dart';
@@ -23,7 +26,14 @@ class MyCartViewBody extends StatelessWidget {
           Divider(thickness: 2, height: 34, color: const Color(0xFFC7C7C7)),
           MyCartTotalPrice(title: 'Total', value: r'$50.97'),
            SizedBox(height: 16),
-          CustomButton(buttonName: 'Complete Payment'),
+          CustomButton(
+            onTap: (){
+              // Navigator.of(context).push(MaterialPageRoute(builder: (context){
+              //   return PaymentDetailesView();
+              // }));
+              GoRouter.of(context).push(AppRouter.kPaymentDetailsView);
+            },
+            buttonName: 'Complete Payment'),
           SizedBox(height: 12),
         ],
       ),

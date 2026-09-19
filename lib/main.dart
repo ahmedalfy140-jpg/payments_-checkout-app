@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payment_app/features/checkout/presentaion/views/my_cart_view.dart';
+import 'package:payment_app/core/utils/app_router.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -8,13 +9,19 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      
+        theme: ThemeData(
+  scaffoldBackgroundColor: Colors.white,
+),
+      
+      
       debugShowCheckedModeBanner: false,
      
-      home: MyCartView()
+       routerConfig: AppRouter.router,
     );
   }
 }
