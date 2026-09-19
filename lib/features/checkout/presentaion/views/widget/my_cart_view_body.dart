@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:payment_app/core/utils/app_router.dart';
-import 'package:payment_app/features/checkout/presentaion/views/payment_detailes_view.dart';
+
 import 'package:payment_app/features/checkout/presentaion/views/widget/custom_button.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/my_cart_total_price_widget.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/order_info_item_widget.dart';

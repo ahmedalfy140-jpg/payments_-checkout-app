@@ -4,6 +4,7 @@ import 'package:payment_app/core/utils/styles.dart';
 
 AppBar buildAppBar({required final String title ,required final void Function()? onTap}) {
     return AppBar(
+      backgroundColor: Colors.transparent,
     leading:Center(
       child: GestureDetector(
         onTap: onTap
