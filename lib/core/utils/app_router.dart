@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:payment_app/features/checkout/presentaion/views/my_cart_view.dart';
 
 import 'package:payment_app/features/checkout/presentaion/views/payment_detailes_view.dart';
+import 'package:payment_app/features/checkout/presentaion/views/thank_you_view.dart';
 
 abstract class AppRouter {
   static const String kMyCartView = '/myCartView';
@@ -24,6 +25,12 @@ abstract class AppRouter {
         path: kPaymentDetailsView,
         builder: (context, state) {
           return const PaymentDetailesView();
+        },
+      ),
+       GoRoute(
+        path: kThankYouView,
+        builder: (context, state) {
+          return const ThankYouView();
         },
       ),
     ],

@@ -22,7 +22,7 @@ class _PaymentMethodsListViewState extends State<PaymentMethodsListView> {
         scrollDirection: Axis.horizontal,
         itemBuilder:((context, index) {
         return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 13  ),
           child: GestureDetector(
              onTap: () {
               setState(() {

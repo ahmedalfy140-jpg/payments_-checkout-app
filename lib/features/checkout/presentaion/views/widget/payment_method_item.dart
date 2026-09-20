@@ -25,7 +25,7 @@ final String image;
         ]
         
         ),
-         duration: Duration(milliseconds: 600),
+         duration: Duration(milliseconds: 300),
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
