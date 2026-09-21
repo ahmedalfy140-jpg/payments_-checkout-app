@@ -79,7 +79,35 @@ class ThankYouViewBody extends StatelessWidget {
                 ),
               ),
               ),
-              )
+              ),
+               Positioned(
+                top: 410,
+                right: -16,
+                
+            
+            child: Container(
+              width: 32,
+              height: 32,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+              ),
+            ),
+          ),
+           Positioned(
+                top: 410,
+                left: -16,
+                
+            
+            child: Container(
+              width: 32,
+              height: 32,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+              ),
+            ),
+          ),
 
       ],
 
