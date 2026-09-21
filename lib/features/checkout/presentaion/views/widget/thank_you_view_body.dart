@@ -53,6 +53,7 @@ class ThankYouViewBody extends StatelessWidget {
             DashedDivider(),
             SizedBox(height: 30),
             Row(children: [
+            
               
             ],)
             
