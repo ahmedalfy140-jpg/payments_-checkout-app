@@ -28,9 +28,7 @@ class MyCartViewBody extends StatelessWidget {
            SizedBox(height: 16),
           CustomButton(
             onTap: (){
-              // Navigator.of(context).push(MaterialPageRoute(builder: (context){
-              //   return PaymentDetailesView();
-              // }));
+             
               GoRouter.of(context).push(AppRouter.kPaymentDetailsView);
             },
             buttonName: 'Complete Payment'),
