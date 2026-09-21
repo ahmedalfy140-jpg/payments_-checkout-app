@@ -18,7 +18,7 @@ class CustomPayedWidget extends StatelessWidget {
 
       ),
       
-      child:Text('Payed',style: Styles.style24.copyWith(color: Color(0xff24A583),),) ,
+      child:Center(child: Text('Payed',style: Styles.style24.copyWith(color: Color(0xff24A583),),)) ,
 
 
     );

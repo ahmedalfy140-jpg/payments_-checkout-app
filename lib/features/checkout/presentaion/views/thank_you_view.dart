@@ -15,7 +15,7 @@ class ThankYouView extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.only(top:32,left: 16,right: 16),
           child: Column(
             children: [
               // Back Button
@@ -32,7 +32,7 @@ class ThankYouView extends StatelessWidget {
       ),
               ),
 
-              const SizedBox(height: 16),
+              const SizedBox(height: 8),
 
               // Receipt Card
               const ThankYouViewBody(),
