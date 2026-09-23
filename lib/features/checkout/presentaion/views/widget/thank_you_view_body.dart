@@ -81,7 +81,7 @@ class ThankYouViewBody extends StatelessWidget {
               ),
               ),
                Positioned(
-                top: 410,
+                top: 405,
                 right: -16,
                 
             
@@ -95,7 +95,7 @@ class ThankYouViewBody extends StatelessWidget {
             ),
           ),
            Positioned(
-                top: 410,
+                top: 405,
                 left: -16,
                 
             

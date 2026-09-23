@@ -5,6 +5,7 @@ import 'package:payment_app/core/utils/app_router.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/custom_button.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/my_cart_total_price_widget.dart';
 import 'package:payment_app/features/checkout/presentaion/views/widget/order_info_item_widget.dart';
+import 'package:payment_app/features/checkout/presentaion/views/widget/show_model_botton_sheet.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -28,8 +29,15 @@ class MyCartViewBody extends StatelessWidget {
            SizedBox(height: 16),
           CustomButton(
             onTap: (){
+              showModalBottomSheet(
+                
+                backgroundColor: Colors.white,
+                
+                context: context, builder: (BuildContext context){
+                return ShowModelBottonSheet();
+              });
              
-              GoRouter.of(context).push(AppRouter.kPaymentDetailsView);
+              // GoRouter.of(context).push(AppRouter.kPaymentDetailsView);
             },
             buttonName: 'Complete Payment'),
           SizedBox(height: 12),
