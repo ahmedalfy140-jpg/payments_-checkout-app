@@ -1,5 +1,5 @@
   import 'package:flutter/material.dart';
-import 'package:payment_app/features/checkout/presentaion/views/widget/custom_button.dart';
+import 'package:payment_app/features/checkout/presentaion/views/widget/custom_button_bloc_consumer.dart';
   import 'package:payment_app/features/checkout/presentaion/views/widget/payment_method_listview.dart';
 
   class ShowModelBottonSheet extends StatefulWidget {
@@ -20,9 +20,10 @@ import 'package:payment_app/features/checkout/presentaion/views/widget/custom_bu
           children: [
             PaymentMethodsListView(),
             SizedBox(height: 20,),
-            CustomButton(buttonName: 'Continue', onTap: (){})
+            CustomButtonBlocConsumer()
           ],
         ),
       );
     }
   }
+

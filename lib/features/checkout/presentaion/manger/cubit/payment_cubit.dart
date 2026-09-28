@@ -1,5 +1,7 @@
-import 'dart:nativewrappers/_internal/vm/lib/developer.dart';
 
+
+
+import 'dart:developer';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,10 +11,10 @@ import 'package:payment_app/features/checkout/data/repos/checkout_repo.dart';
 part 'payment_state.dart';
 
 class PaymentCubit extends Cubit<PaymentState> {
-  PaymentCubit({required this.checkoutRepo}) : super(PaymentInitial());
+  PaymentCubit( this.checkoutRepo) : super(PaymentInitial());
   final CheckoutRepo checkoutRepo;
   Future makePayment({ required PaymentIntentInputModel paymentIntentInput})async{
-    emit(PaymentLoadig());
+    emit(PaymentLoading());
      var data =await checkoutRepo.makePayment(paymentIntentInput: paymentIntentInput);
      data.fold((l){
       emit(PaymentFailure(errorMessage: l.errorMessage));

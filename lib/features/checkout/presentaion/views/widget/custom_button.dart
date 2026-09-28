@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:payment_app/core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.buttonName,required this.onTap});
+  const CustomButton({super.key, required this.buttonName,required this.onTap, this.isLoading=false});
   final String buttonName;
   final void Function()? onTap;
+  final bool isLoading ;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class CustomButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(15)
         )),
-         child:Center(child: Text(buttonName,style: Styles.style22,)) ,
+         child: isLoading ? CircularProgressIndicator(): Center(child: Text(buttonName,style: Styles.style22,)) ,
       ),
     );
   }
